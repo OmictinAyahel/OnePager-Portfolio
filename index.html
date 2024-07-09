@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>PERSONAL PORTFOLIO WEBSITE</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Web Developer</p>
+                <h1>Hi, I'm <span>Ayahel</span> <br>  Omictin From  Laguna</h1>
+            </div>
+        </div>  
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/img/self.jpg" alt="" class="resize-img">
+                </div>                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A passionate front-end developer,
+                        dedicated to transforming ideas into engaging and dynamic websites.
+                        With a strong focus on coding and creating interactive web experiences,
+                        I combine creativity with technical to deliver innovative digital solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Development</span><br>HTML, CSS, JavaScrip</li>
+                            <li><span>Back-end Development</span><br>Php, Java</li>
+                            <li><span>UI/UX Design</span><br>Prototyping, Wireframing, Figma, Canva</li>
+                            <li><span>Version Control</span><br>Git, GitHub, Bitbucket</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Pamantasan ng Cabuyao(Uc)</span><br>Bachelor of Science in Information and Technology <br>*One of the Top 5 Best in Capstone Research</li>
+                            <li><span>Asian Institute of Technology Sciences and The Arts, Inc.</span><br>Information and Communication Technology (ICT) - Software <br>*with Honors
+                            </li>
+                            <li><span>Malitlit Elementary School</span><br>*serviceable awardee</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Crafting visually appealing and user-friendly websites that are responsive and optimized for performance.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>UX/UI Design</h2>
+                <p>Designing intuitive and engaging user interfaces and experiences that enhance user satisfaction and accessibility.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-file"></i>
+                <h2>Desktop Web App</h2>
+                <p>Creating robust and scalable desktop applications with a focus on seamless user experience and efficient functionality.</p>
+            </div>
+        </div>        
+    </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work" data-id="hydrant">
+                    <img src="assets/img/hydrant.png" alt="Fire Hydrant Mapping Solution">
+                    <div class="work-info">
+                        <h3>Fire Hydrant Mapping Solution for Cabuyao City Bureau of Fire Protection</h3><br>
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+                <div class="work" data-id="leave-trackr">
+                    <img src="assets/img/leavetrckr.jpg" alt="Leave Trackr">
+                    <div class="work-info">
+                        <h3>Leave Trackr Web Desktop Application</h3><br>
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+                <div class="work" data-id="hotel-reservation">
+                    <img src="assets/img/hotel.jpg" alt="Hotel Reservation Management Website">
+                    <div class="work-info">
+                        <h3>Hotel Reservation Management Website</h3>
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+                <div class="work" data-id="String Calculator">
+                    <img src="assets/img/stringcalc.png" alt="String Calculator">
+                    <div class="work-info">
+                        <h3>String Calculator</h3>
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+                <div class="work" data-id="Hospital Managament">
+                    <img src="assets/img/hospital.jpg" alt="Hospital Managament">
+                    <div class="work-info">
+                        <h3>Hospital Management System</h3>
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+                <div class="work" data-id="Grade Calculator"> 
+                    <img src="assets/img/grade.jpg" alt="Grade Calculator">
+                    <div class="work-info">
+                        <h3>Grade Calculator</h3>
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-description" id="hydrant">
+                <h3>Fire Hydrant Mapping Solution for Cabuyao City Bureau of Fire Protection</h3> <br>
+                <p>Capstone research selected as one of the top 5 best capstone research projects. The objective is to assist Cabuyao firefighters in their daily operations by providing a detailed and interactive map of all fire hydrants in the city.</p>
+            </div>
+            <div class="modal-description" id="leave-trackr">
+                <h3>Leave Trackr Web Desktop App</h3><br>
+                <p>This web desktop application was developed during my internship at the Cabuyao Water District's Administrative and General Services Office. It assists in summarizing and monitoring the leave credits of company employees.</p>
+            </div>
+            <div class="modal-description" id="hotel-reservation">
+                <h3>Hotel Reservation Management Website</h3><br>
+                <p>This project involved the creation of a comprehensive website for hotel management. It allows customers to schedule reservations and book facilities easily.</p>
+            </div>
+            <div class="modal-description" id="String Calculator">
+                <h3>String Calculator</h3><br>
+                <p>The String Calculator is tool designed to calculates:<br>
+                    string entered by the user into uppercase letters,<br> last character of the string, <br> 
+                    and reverses the order of characters in the string.</p>
+            </div>
+            <div class="modal-description" id="Hospital Managament">
+                <h3>Hospital Managament System</h3><br>
+                <p>Hospital Management System develop using Laravel for the backend API and Vue.js for the frontend. This system will manage patients, doctors, appointments, and medical records.
+                </p>
+            </div>
+            <div class="modal-description" id="Grade Calculator">
+                <h3>Grade Calculator</h3><br>
+               <p>The Grade Calculator is an essential tool designed to help students accurately compute their grades for the preliminary, midterm, and final exams.</p>
+            </div>
+         
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-envelope"></i>omictinayahel@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>09912411546</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/omictin.ayahel""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_ayahel?igsh=M2E0MDgyMmFob29k"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ayahel-omictin-b8a117281/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=https://github.com><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="img/RESUME.pdf" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <div class="quote">
+                        <p class="quote-text">"Continuous learning is the key to mastering new skills and staying ahead in the rapidly evolving tech industry."</p>
+                        <p class="quote-author">- Ayahel Omictin</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 Ms. Ayahel. All Rights Reserved. </p>
+        </div>
+    </div>
+<script src="assets/js/script.js"></script>
+</body> 
+</html>
